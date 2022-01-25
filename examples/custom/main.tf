@@ -30,7 +30,7 @@ module "k8s_xray" {
 
   create_namespace = true
 
-  name = "diff-app-name-xray"
+  name = "diff-app-xray"
 
-  namespace = "diff-namespace-xray"
+  namespace = "diff-ns-xray"
 }
