@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.4](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/compare/v1.0.3...v1.0.4) (2022-01-25)
+
+
+### Bug Fixes
+
+* custom example name fix ([3e2dd18](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/commit/3e2dd18c14b8074bd60d848cf29da9e24a3eea24))
+
 ### [1.0.3](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/compare/v1.0.2...v1.0.3) (2022-01-25)
 
 
