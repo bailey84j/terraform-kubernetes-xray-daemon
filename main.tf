@@ -94,7 +94,7 @@ resource "kubernetes_daemonset" "this" {
           }
         }
 
-        service_account_name = "${var.name}"
+        service_account_name = var.name
       }
     }
 
