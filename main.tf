@@ -1,3 +1,10 @@
+resource "kubernetes_namespace" "this" {
+  count = var.create_namespace && var.namespace != "kube-system" ? 1 : 0
+  metadata {
+    name = var.namespace
+  }
+}
+
 resource "kubernetes_service_account" "this" {
   metadata {
     name      = var.name
@@ -142,12 +149,12 @@ resource "kubernetes_service" "this" {
   }
 }
 
-// region aws iam role
+# region aws iam role
 
 locals {
-  iam_role_name     = coalesce(var.iam_role_name, "${var.eks_cluster_name}-${var.name}")
+  iam_role_name = coalesce(var.iam_role_name, "${var.eks_cluster_name}-${var.name}")
 }
-// to be updated
+# to be updated
 data "aws_iam_policy_document" "assume_role_policy" {
   count = var.create_iam_role ? 1 : 0
 
@@ -185,7 +192,7 @@ resource "aws_iam_role" "this" {
   managed_policy_arns = ["arn:${data.aws_partition.current.partition}:iam::aws:policy/AWSXRayDaemonWriteAccess"]
 
   tags = merge(var.tags, var.iam_role_tags)
-  
+
 }
 
-// endregion aws iam role
+# endregion aws iam role
