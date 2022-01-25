@@ -40,7 +40,7 @@ $ terraform apply
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_k8s_fluentd"></a> [k8s\_fluentd](#module\_k8s\_fluentd) | ../../ | n/a |
+| <a name="module_k8s_xray"></a> [k8s\_xray](#module\_k8s\_xray) | ../../ | n/a |
 
 ## Resources
 
