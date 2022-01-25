@@ -14,9 +14,14 @@ variable "prefix_separator" {
 # Fluentd
 ################################################################################
 variable "name" {
-  description = "The name of the fluentd deployment"
+  description = "The name of the xray deployment"
   type        = string
-  default     = "fluentd"
+  default     = "xray"
+
+  validation {
+    condition     = length(var.name) <= 8
+    error_message = "The name value must be 8 characters or less."
+  }
 
 }
 
