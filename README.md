@@ -2,7 +2,7 @@
 
 Terraform module which deploys X-Ray Daemon
 
-[![Lint Status](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/actions/workflows/main.yml/badge.svg)](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/actions/workflows/main.yml)
+[![tflint](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/actions/workflows/tflint.yml/badge.svg)](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/actions/workflows/tflint.yml)
 [![LICENSE](https://img.shields.io/github/license/bailey84j/terraform-kubernetes-xray-daemon)](https://github.com/bailey84j/terraform-kubernetes-xray-daemon/blob/master/LICENSE)
 
 
