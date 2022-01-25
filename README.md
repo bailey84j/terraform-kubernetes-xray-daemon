@@ -70,7 +70,7 @@ No modules.
 | <a name="input_iam_role_use_name_prefix"></a> [iam\_role\_use\_name\_prefix](#input\_iam\_role\_use\_name\_prefix) | Determines whether the IAM role name (`iam_role_name`) is used as a prefix | `string` | `true` | no |
 | <a name="input_image_name"></a> [image\_name](#input\_image\_name) | The name of the fluentd-cloudwatch container image | `string` | `"fluentd-kubernetes-daemonset"` | no |
 | <a name="input_image_version"></a> [image\_version](#input\_image\_version) | The name of the fluentd-cloudwatch container image version | `string` | `"v1.14.3-debian-cloudwatch-1.0"` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the fluentd deployment | `string` | `"fluentd"` | no |
+| <a name="input_name"></a> [name](#input\_name) | The name of the xray deployment | `string` | `"xray"` | no |
 | <a name="input_namespace"></a> [namespace](#input\_namespace) | The namespace to put the fluentd deployment in | `string` | `"kube-system"` | no |
 | <a name="input_prefix_separator"></a> [prefix\_separator](#input\_prefix\_separator) | The separator to use between the prefix and the generated timestamp for resource names | `string` | `"-"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources | `map(string)` | `{}` | no |
