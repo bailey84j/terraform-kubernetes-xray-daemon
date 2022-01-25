@@ -30,7 +30,8 @@ module "k8s_xray" {
 
   create_namespace = true
 
-  name = "diff-app-xray"
+  name = "not-xray"
+  # Cannot be longer than 8 characters
 
   namespace = "diff-ns-xray"
 }
